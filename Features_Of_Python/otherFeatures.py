@@ -5,7 +5,7 @@
 #Properties
 class Circle:
     def __init__(self, radius):
-        self._radius = radius
+        self._radius = radius #Privvate attribute 
     
     #Getter
     @property
