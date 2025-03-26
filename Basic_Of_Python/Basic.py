@@ -109,5 +109,34 @@ print(" seu nome eh: " , nome)
 
 help(max) #show how the function works
 
+#---------------------------------------------------------------------#
+#exercises
+#01) Average 10, 15, 20
+avg = (10 + 15 + 20) / 3
+print(avg)
 
+#02) min price of the list 
+minPrice = min([100.20, 34.90, 31.50, 18.95])
+print(minPrice)
 
+#03) calc the pond avg
+n1 = int(input("Digit the first note: "))
+w1 = int(input("Digit the first weight: "))
+n2 = int(input("Digit the second note: "))
+w2 = int(input("Digit the second weight: "))
+
+pavg = ((n1 * w1) + (n2 * w2)) / (w1 + w2)
+print(pavg) 
+
+#04)- Fahrenraint to ceulcius
+
+fa = int(input("Digite a temperatura em fa: "))
+cel = 5 * ((fa - 32) / 9)
+print("Temperatura em celcius: " , cel)
+
+#05)- odd number
+numberOdd = int(input("Digit a number:"))
+if((numberOdd % 2) == 0):
+    print("Number is even")
+else:
+    print("Number is odd")
