@@ -140,3 +140,106 @@ if((numberOdd % 2) == 0):
     print("Number is even")
 else:
     print("Number is odd")
+#--------------------------------------------------------
+#Decision control
+# if <condition>:
+#   <action>
+
+temp = int(input("Temp: "))
+if(temp >= 40): 
+    print("Hot")
+elif((temp < 40) & (temp > 28)):
+    print("Even")
+else:
+    print("Cold")
+
+#While loop
+#while condition:
+    # comand1
+    # comand2
+
+number = 0
+while number <= 10:
+    print(number)
+    number += 1
+    
+print()
+
+row = 0
+colunm = 0
+
+while row <= 5:
+    colunm = 0
+    print(f"Row [ {row} ] Colunm -", end="  ")
+    while colunm <= 5:
+        print(f"[ {colunm} ]", end="  ")
+        colunm += 1
+    print()
+    row += 1
+    
+#For Loop
+#for var(iterable) in itens:
+#   comand1
+print()
+for day in ["Seg", "Ter", "Qua", "Qui", "Sex"]:
+    print(day, end=" ")
+
+print("Parei aauqi")
+
+# for numero in [0,1,2,3,4,5]:
+#     print(numero, end=" ")
+    
+# for numero in range(6):
+#     print(numero, end=" ")
+    
+# for numero in range(5, 20): #starts on position 5 and go to 20
+#     print(number)
+    
+# for numero in range(5, 20, 5): #starts on position 5 and go to 20 jumping 5 - 5 elements
+#     print(number)
+  
+#Exercises loop
+#01)- factorial
+print("Factorial")
+num = int(input("Digite um numero: "))
+fatorial = num
+
+while num > 2:
+    fatorial = fatorial * (num - 1)
+    num -= 1
+print(fatorial)
+
+#02)- 
+password = '0000'
+trying = 3
+
+while trying != 0:
+    trying = input("Digit your password")
+    
+    if trying == password:
+        print("Correct password")
+        break
+    else: 
+        print("Wrong password")
+        trying -= 1
+
+#Exercise loop for
+#01)- multiplying table
+tabuada = int(input("Digite a tabuada que sera gerada"))
+limit = int(input("Limite de numero: "))
+for numero in range(0, limit+1):
+    print(f'{tabuada} x {numero} = {tabuada * numero}')
+    
+#02)-fibonacci
+n = int(input("Digit the element:"))
+first = 1
+second = 1
+
+if n==1 or n==2:
+    print('1')
+else:
+    for _ in range(2,n):
+        element = first + second
+        second = first
+        first = second
+        print(element)
